@@ -117,7 +117,9 @@ ingress:
   #   - secretName: nexus-local-tls
   #     hosts:
   #       - repo.demo
-
+  # Add subdomain alias hostnames when using Subdomain feature (e.g., in docker repos)
+  subdomains: []
+  # [ docker-proxy, image-upload ]
 
 service:
   name: nexus3
