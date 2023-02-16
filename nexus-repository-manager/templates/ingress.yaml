@@ -42,8 +42,8 @@ spec:
                 name: {{ $fullName }}
                 port:
                   number: 8081
-    {{- range $subdomain := .Values.ingress.subdomains }}
-    - host: {{ $subdomain }}.{{ $.Values.ingress.hostRepo }}
+    {{- range $subdomain := .Values.ingress.subdomains.subdomainNames }}
+    - host: {{ $subdomain }}.{{ $.Values.ingress.subdomains.dnsSuffix }}
       http:
         paths:
           - path: {{ $.Values.ingress.hostPath }}
