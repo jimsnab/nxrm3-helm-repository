@@ -42,22 +42,9 @@ spec:
                 name: {{ $fullName }}
                 port:
                   number: 8081
-    {{- range $subdomain := .Values.ingress.subdomains.subdomainNames }}
-    - host: {{ $subdomain }}.{{ $.Values.ingress.subdomains.dnsSuffix }}
-      http:
-        paths:
-          - path: {{ $.Values.ingress.hostPath }}
-            pathType: Prefix
-            backend:
-              service:
-                name: {{ $subdomain }}
-                port:
-                  number: 8081
-    {{- end }}
 
 {{ if .Values.nexus.docker.enabled }}
 {{ range $registry := .Values.nexus.docker.registries }}
-
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress

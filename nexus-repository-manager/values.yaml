@@ -117,15 +117,7 @@ ingress:
   #   - secretName: nexus-local-tls
   #     hosts:
   #       - repo.demo
-  # Add subdomain alias hostnames when using Subdomain feature (e.g., in docker repos)
-  subdomains: 
-    # subdomains must be at the same level as the front end server, so if your
-    # front end is at nexus.my.domain.com, then dnsSuffix is my.domain.com
-    dnsSuffix: demo
-    subdomainNames: []
-    # these are your names of the docker repos as registered in Sonatype's subdomain field
-    # and will add names such as docker-proxy.my.domain.com to the Ingress
-    # [ docker-proxy, image-upload ]
+
 
 service:
   name: nexus3
