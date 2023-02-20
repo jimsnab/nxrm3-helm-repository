@@ -108,6 +108,10 @@ deployment:
 
 ingress:
   enabled: false
+  # If commonDockerIngress is true, then each docker registry will be added as an 
+  # additional host to the Ingress handling the UI load, instead of declaring an
+  # additional Ingress per registry.
+  commonDockerIngress: false
   ingressClassName: nginx
   annotations:
     nginx.ingress.kubernetes.io/proxy-body-size: "0"

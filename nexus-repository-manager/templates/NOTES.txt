@@ -2,8 +2,10 @@
 1. Your ingresses are available here:
   http{{ if $.Values.ingress.tls }}s{{ end }}://{{ $.Values.ingress.hostRepo }}{{ $.Values.ingress.hostPath }}
   {{- if $.Values.nexus.docker.enabled }}
+  {{- if not $.Values.ingress.commonDockerIngress }}
   {{- range $registry := .Values.nexus.docker.registries }}
   https://{{ $registry.host }}/
+  {{- end }}
   {{- end }}
   {{- end }}
 {{- else if contains "NodePort" .Values.service.type }}

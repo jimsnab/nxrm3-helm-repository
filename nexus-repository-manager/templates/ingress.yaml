@@ -42,8 +42,21 @@ spec:
                 name: {{ $fullName }}
                 port:
                   number: 8081
-
-{{ if .Values.nexus.docker.enabled }}
+{{- if .Values.nexus.docker.enabled }}
+{{- if $.Values.ingress.commonDockerIngress }}
+{{- range $registry := .Values.nexus.docker.registries }}
+    - host: {{ $registry.host }}
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ $fullName | trunc 49 }}-docker-{{ $registry.port }}
+                port:
+                  number: {{ $registry.port }}
+{{- end }} {{- /* range of nexus.docker.registries */ -}}
+{{- else }} {{- /* ingress.commonDockerIngress */ -}}
 {{ range $registry := .Values.nexus.docker.registries }}
 ---
 apiVersion: networking.k8s.io/v1
@@ -81,5 +94,6 @@ spec:
                 port:
                   number: {{ $registry.port }}
 {{- end }} {{- /* range of nexus.docker.registries */ -}}
+{{- end }} {{- /* else !ingress.commonDockerIngress */ -}}
 {{- end }} {{- /* nexus.docker.enabled */ -}}
 {{- end }} {{- /* ingress.enabled */ -}}
