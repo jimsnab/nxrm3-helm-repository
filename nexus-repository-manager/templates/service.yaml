@@ -36,7 +36,10 @@ apiVersion: v1
 kind: Service
 metadata:
   name: {{ include "nexus.fullname" $ | trunc 49 }}-docker-{{ $registry.port }}
-{{- if $.Values.service.annotations }}
+{{- if $registry.serviceAnnotations }}
+  annotations:
+{{ toYaml $registry.serviceAnnotations | indent 4 }}
+{{- else if $.Values.service.annotations }}
   annotations:
 {{ toYaml $.Values.service.annotations | indent 4 }}
 {{- end }}

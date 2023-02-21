@@ -3,7 +3,35 @@ entries:
   nexus-repository-manager:
   - apiVersion: v2
     appVersion: 3.47.1
-    created: "2023-02-20T17:25:10.852538405-05:00"
+    created: "2023-02-21T11:37:56.557435733-05:00"
+    description: Sonatype Nexus Repository Manager - Universal Binary repository
+    digest: 5bc26208c306ebe510172c71bbef19017adb55cc1c063f324fedc9df90e33d18
+    home: https://www.sonatype.com/nexus-repository-oss
+    icon: https://sonatype.github.io/helm3-charts/NexusRepo_Vertical.svg
+    keywords:
+    - artifacts
+    - dependency
+    - management
+    - sonatype
+    - nexus
+    - repository
+    - quickstart
+    - ci
+    - repository-manager
+    - nexus3
+    maintainers:
+    - email: support@sonatype.com
+      name: Sonatype
+    name: nexus-repository-manager
+    sources:
+    - https://github.com/sonatype/nexus-public
+    type: application
+    urls:
+    - https://jimsnab.github.io/nxrm3-helm-repository/docs/nexus-repository-manager-47.1.51.tgz
+    version: 47.1.51
+  - apiVersion: v2
+    appVersion: 3.47.1
+    created: "2023-02-21T11:37:56.556514399-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: fea41c7e642e518156a328407d406b73e09b06d79dd2fec647bc53469f7b3ed2
     home: https://www.sonatype.com/nexus-repository-oss
@@ -31,7 +59,7 @@ entries:
     version: 47.1.50
   - apiVersion: v2
     appVersion: 3.47.1
-    created: "2023-02-20T17:25:10.850314788-05:00"
+    created: "2023-02-21T11:37:56.555532707-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: c41dcf689aa551cf1cd9eb8f193757b5b43f9438436d0905764224975a130430
     home: https://www.sonatype.com/nexus-repository-oss
@@ -59,7 +87,7 @@ entries:
     version: 47.1.1
   - apiVersion: v2
     appVersion: 3.47.1
-    created: "2023-02-20T17:25:10.849050408-05:00"
+    created: "2023-02-21T11:37:56.554528236-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: b52b75441c53c509f3c56ce7e0c3d56bc79723d664573ea5f8d98da539c8d394
     home: https://www.sonatype.com/nexus-repository-oss
@@ -87,7 +115,7 @@ entries:
     version: 47.1.0
   - apiVersion: v2
     appVersion: 3.46.0
-    created: "2023-02-20T17:25:10.847987513-05:00"
+    created: "2023-02-21T11:37:56.553577601-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: 937cba51aa126fb64d070c46deaccd71a29eca502aaff014f363b315979f8bd6
     home: https://www.sonatype.com/nexus-repository-oss
@@ -115,7 +143,7 @@ entries:
     version: 46.0.0
   - apiVersion: v2
     appVersion: 3.45.1
-    created: "2023-02-20T17:25:10.846999005-05:00"
+    created: "2023-02-21T11:37:56.552594751-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: 50fab2848f46a503561478662e97509d5e9cc26103b215beb4d36f0f7568d241
     home: https://www.sonatype.com/nexus-repository-oss
@@ -143,7 +171,7 @@ entries:
     version: 45.1.0
   - apiVersion: v2
     appVersion: 3.45.0
-    created: "2023-02-20T17:25:10.845903747-05:00"
+    created: "2023-02-21T11:37:56.550534417-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: 9f5e4577207139602a7b39ec00202deb0c086b1ae6bfcd6a8e82dbdcfe9427d9
     home: https://www.sonatype.com/nexus-repository-oss
@@ -171,7 +199,7 @@ entries:
     version: 45.0.0
   - apiVersion: v2
     appVersion: 3.44.0
-    created: "2023-02-20T17:25:10.844804022-05:00"
+    created: "2023-02-21T11:37:56.549362981-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: 17b80233aeea4565dd7a60133561611e9da76bdc49aadab05d5bb81508c0f794
     home: https://www.sonatype.com/nexus-repository-oss
@@ -199,7 +227,7 @@ entries:
     version: 44.0.0
   - apiVersion: v2
     appVersion: 3.43.0
-    created: "2023-02-20T17:25:10.843708379-05:00"
+    created: "2023-02-21T11:37:56.548185354-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: 0c5d656ae06041ab0296b472ed46dd520af3222fd105663d857a64a3b7386c46
     home: https://www.sonatype.com/nexus-repository-oss
@@ -227,7 +255,7 @@ entries:
     version: 43.0.0
   - apiVersion: v2
     appVersion: 3.42.0
-    created: "2023-02-20T17:25:10.840741764-05:00"
+    created: "2023-02-21T11:37:56.547030169-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: f2b813d4a3f0e72d1a81f48e8d24b44188a468f1ec5403152a6c6a73b124176d
     home: https://www.sonatype.com/nexus-repository-oss
@@ -255,7 +283,7 @@ entries:
     version: 42.0.1
   - apiVersion: v2
     appVersion: 3.42.0
-    created: "2023-02-20T17:25:10.839632746-05:00"
+    created: "2023-02-21T11:37:56.545925349-05:00"
     description: Sonatype Nexus Repository Manager - Universal Binary repository
     digest: d7d429fb3c6a16a2bea7ffe4eec6696bf5d3b2dfa5ffd5f5bbeb18484931b812
     home: https://www.sonatype.com/nexus-repository-oss
@@ -284,7 +312,7 @@ entries:
   nxrm-aws-resiliency:
   - apiVersion: v2
     appVersion: 3.47.1
-    created: "2023-02-20T17:25:10.86321605-05:00"
+    created: "2023-02-21T11:37:56.568139136-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: e0e8072745bf3898548715d6a243bc297de024be25c4855f333ba96b6c33e6f8
@@ -310,7 +338,7 @@ entries:
     version: 47.1.0
   - apiVersion: v2
     appVersion: 3.46.0
-    created: "2023-02-20T17:25:10.862398133-05:00"
+    created: "2023-02-21T11:37:56.567260299-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: 58ed89dd708cab20891748fcdcbb327e789f3c6abce3bfd0c3b9abf40dc730d8
@@ -336,7 +364,7 @@ entries:
     version: 46.0.0
   - apiVersion: v2
     appVersion: 3.45.1
-    created: "2023-02-20T17:25:10.861605653-05:00"
+    created: "2023-02-21T11:37:56.566432015-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: f7d2585c9900b3b43da7a684cb5e97ddd30093edb82d0c6bee62f371b6bc703e
@@ -362,7 +390,7 @@ entries:
     version: 45.1.0
   - apiVersion: v2
     appVersion: 3.45.0
-    created: "2023-02-20T17:25:10.860355072-05:00"
+    created: "2023-02-21T11:37:56.565647035-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: 92625dfa4da3a228603c5f067cfabd53e390662051483f698577b3017b19e768
@@ -388,7 +416,7 @@ entries:
     version: 45.0.0
   - apiVersion: v2
     appVersion: 3.44.0
-    created: "2023-02-20T17:25:10.859145978-05:00"
+    created: "2023-02-21T11:37:56.564643559-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: ee038335447317912eb59c01bf29578c989f37126fe79b37636aed271a91334e
@@ -414,7 +442,7 @@ entries:
     version: 44.0.0
   - apiVersion: v2
     appVersion: 3.43.0
-    created: "2023-02-20T17:25:10.858268511-05:00"
+    created: "2023-02-21T11:37:56.563831457-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: 47fc44e2df89c31f5164bcb68f3d8dac6ca72e81ff27f5a8c65e772bb5cc2e26
@@ -440,7 +468,7 @@ entries:
     version: 43.0.0
   - apiVersion: v2
     appVersion: 3.42.0
-    created: "2023-02-20T17:25:10.857401203-05:00"
+    created: "2023-02-21T11:37:56.563042315-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: ff83ff56339248d6c30d8ff9cf3a63f8c21162beabd447a2400520081937862a
@@ -466,7 +494,7 @@ entries:
     version: 42.0.1
   - apiVersion: v2
     appVersion: 3.42.0
-    created: "2023-02-20T17:25:10.856597056-05:00"
+    created: "2023-02-21T11:37:56.562189391-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: 4418f85f860864b445b2fae76efb0d5fad70d8c2feabbf72adbafb91a065ed98
@@ -492,7 +520,7 @@ entries:
     version: 42.0.0
   - apiVersion: v2
     appVersion: 3.41.1
-    created: "2023-02-20T17:25:10.855722774-05:00"
+    created: "2023-02-21T11:37:56.561370078-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: da3a86b9b562871b397ffb30ab73ced1bfda9bb1f2e4f44b59b177abcb308a54
@@ -518,7 +546,7 @@ entries:
     version: 41.1.3
   - apiVersion: v2
     appVersion: 3.41.1
-    created: "2023-02-20T17:25:10.854916204-05:00"
+    created: "2023-02-21T11:37:56.560026027-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: 624e852ae9777cc7ff21e2bf4376c480604b9be0ea7d9b4c6373c0768fef1d55
@@ -544,7 +572,7 @@ entries:
     version: 41.1.2
   - apiVersion: v2
     appVersion: 3.41.1
-    created: "2023-02-20T17:25:10.854146847-05:00"
+    created: "2023-02-21T11:37:56.558953684-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: 5bb937763550803a15b9d6741dd2b54cb8e2bf536f81559a939e7c9cb0ff502d
@@ -570,7 +598,7 @@ entries:
     version: 41.1.1
   - apiVersion: v2
     appVersion: 3.41.1
-    created: "2023-02-20T17:25:10.853349545-05:00"
+    created: "2023-02-21T11:37:56.558167497-05:00"
     description: Resilient AWS Deployment of Sonatype Nexus Repository Manager - Universal
       Binary repository
     digest: 5841d5e243c8f5882eb59e81e68200d5b8a27841b44d64e79de7eb5464c1243a
@@ -594,4 +622,4 @@ entries:
     urls:
     - https://jimsnab.github.io/nxrm3-helm-repository/docs/nxrm-aws-resiliency-41.1.0.tgz
     version: 41.1.0
-generated: "2023-02-20T17:25:10.838438031-05:00"
+generated: "2023-02-21T11:37:56.544709455-05:00"
